@@ -1,0 +1,25 @@
+def analyze_string(s):
+    if len(s) == 0:
+            print("Empty string entered.")
+                    return
+
+                        print("Length =", len(s))
+                            print("Reverse =", s[::-1])
+
+                                vowels = "aeiouAEIOU"
+                                    count = 0
+
+                                        for ch in s:
+                                                if ch in vowels:
+                                                            count += 1
+
+                                                                print("Number of vowels =", count)
+
+                                                                    print("\nCharacter with Positive and Negative Index:")
+
+                                                                        for i in range(len(s)):
+                                                                                print(f"{s[i]} -> +{i}, {i-len(s)}")
+
+
+                                                                                text = input("Enter a string: ")
+                                                                                analyze_string(text)
